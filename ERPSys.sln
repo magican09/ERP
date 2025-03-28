@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CEE37F35-45E0-4708-A699-03651F6F6C1C}"
+	ProjectSection(SolutionItems) = preProject
+		src\Integration.puml = src\Integration.puml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataDictationary", "DataDictationary", "{29197698-4FD3-4A3D-9FE1-FEDBEF10BA38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataDictationaryService.gRPC", "src\DataDictationary\DataDictationaryService.gRPC\DataDictationaryService.gRPC.csproj", "{15D4F24C-40F1-4404-A9EB-E054E0097A52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91EA39A6-5094-4521-9614-7893676370E6}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataDictationaryService.Domain", "src\DataDictationary\DataDictationaryService.Domain\DataDictationaryService.Domain.csproj", "{D9FADE1C-0E7C-4723-9136-5CF87CD24C2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataDictationaryService.Infrastructure", "src\DataDictationary\DataDictationaryService.Infrastructure\DataDictationaryService.Infrastructure.csproj", "{84E1C97F-5CAF-4038-BE36-5A27397F58D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestApp", "src\DataDictationary\ConsoleTestApp\ConsoleTestApp.csproj", "{5EF4B4DD-C262-44DF-B217-DE6B29A31ED8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15D4F24C-40F1-4404-A9EB-E054E0097A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D4F24C-40F1-4404-A9EB-E054E0097A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D4F24C-40F1-4404-A9EB-E054E0097A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D4F24C-40F1-4404-A9EB-E054E0097A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9FADE1C-0E7C-4723-9136-5CF87CD24C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9FADE1C-0E7C-4723-9136-5CF87CD24C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9FADE1C-0E7C-4723-9136-5CF87CD24C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9FADE1C-0E7C-4723-9136-5CF87CD24C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E1C97F-5CAF-4038-BE36-5A27397F58D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E1C97F-5CAF-4038-BE36-5A27397F58D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E1C97F-5CAF-4038-BE36-5A27397F58D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E1C97F-5CAF-4038-BE36-5A27397F58D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF4B4DD-C262-44DF-B217-DE6B29A31ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF4B4DD-C262-44DF-B217-DE6B29A31ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF4B4DD-C262-44DF-B217-DE6B29A31ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF4B4DD-C262-44DF-B217-DE6B29A31ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29197698-4FD3-4A3D-9FE1-FEDBEF10BA38} = {CEE37F35-45E0-4708-A699-03651F6F6C1C}
+		{15D4F24C-40F1-4404-A9EB-E054E0097A52} = {29197698-4FD3-4A3D-9FE1-FEDBEF10BA38}
+		{D9FADE1C-0E7C-4723-9136-5CF87CD24C2B} = {29197698-4FD3-4A3D-9FE1-FEDBEF10BA38}
+		{84E1C97F-5CAF-4038-BE36-5A27397F58D2} = {29197698-4FD3-4A3D-9FE1-FEDBEF10BA38}
+		{5EF4B4DD-C262-44DF-B217-DE6B29A31ED8} = {29197698-4FD3-4A3D-9FE1-FEDBEF10BA38}
+	EndGlobalSection
+EndGlobal

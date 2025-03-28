@@ -1,0 +1,24 @@
+@startuml
+actor "Front" as front
+autonumber
+box "Back" #LightBlue
+box "" 
+participant "Dictationary BFF Service" as dict_bbf
+end box
+participant "FormsService" as forms_service
+participant "DataDictationary.Service" as data_dict_service
+database "Dictationary db" as dict_db
+
+
+end box
+
+
+front ->dict_bbf++:получение словарей
+dict_bbf -> data_dict_service++: получение словарей
+data_dict_service->dict_db++:получение словарей
+dict_db -->data_dict_service--: список словарей
+data_dict_service-->dict_bbf--:список словарей
+dict_bbf-->front--: список словарей
+
+
+@enduml

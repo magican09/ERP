@@ -1,0 +1,51 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Requisite<T>{
++Value:T
++Name:string
+}
+
+class IntRequisite{
++Value:int
++Name:string
+}
+
+class StringRequisite{
++Value:string
++Name:string
+}
+
+class DeciRequisite{
++Value:decimal
++Name:string
+}
+
+class DataDictationaryRecordItemRequisite{
++Value:DataDictationaryRecordItem
++Name:string
+}
+
+
+class DataDictationaryRecordItem {
++IntRequisites:ReadOnlyList<IntRequisite>
++DecimRequisites:ReadOnlyList<DeciRequisite>
++StringRequisites:ReadOnlyList<StringRequisiteRequisite>
++DataDictationaryRecordItemRequisites:ReadOnlyList<DataDictationaryRecordItemRequisite>
+}
+
+class DataDictationary{
++DataDictationaryRecordItems:ReadOnlyList<DataDictationaryRecordItem>
+}
+
+Requisite <|--IntRequisite
+Requisite <|--StringRequisite
+Requisite<|-- DeciRequisite
+Requisite<|-- DataDictationaryRecordItemRequisite
+
+DataDictationaryRecordItem *-- IntRequisite
+DataDictationaryRecordItem *-- DeciRequisiteRequisite
+DataDictationaryRecordItem *-- StringRequisiteRequisite
+DataDictationaryRecordItem *-- DataDictationaryRecordItemRequisiteRequisite
+
+@enduml
